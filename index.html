@@ -647,8 +647,7 @@
             <small>ensino interativo</small>
         </h1>
         <div class="header-actions">
-            <button class="btn btn-outline" onclick="toggleTheme()" aria-label="Alternar tema">
-                <i class="fas fa-moon"></i> <span id="themeLabel">Tema</span>
+            <i class="fas fa-moon"></i> <span id="themeLabel">Tema</span>
             </button>
         </div>
     </header>
@@ -677,19 +676,32 @@
             <!-- COLUNA ESQUERDA: TEORIA -->
             <div class="card">
                 <h2><i class="fas fa-compass" style="color: var(--primary-light);"></i> O que é o Plano 2D?</h2>
-                <p>O <strong>Plano Cartesiano</strong> é um sistema de coordenadas formado por dois eixos perpendiculares:</p>
+                <p>O <strong>Plano Cartesiano</strong> é um sistema de coordenadas criado por René Descascartes. 
+                    Ele é formado por dois eixos perpendiculares(Eles se cruzam em um ângulo reto):</p>
                 <ul>
                     <li><span class="highlight">Eixo X</span> (abscissa) → horizontal</li>
                     <li><span class="highlight">Eixo Y</span> (ordenada) → vertical</li>
                 </ul>
-                <p>Eles se cruzam na <strong>origem (0,0)</strong>.</p>
-                <p>Qualquer ponto no plano é representado por um par ordenado <strong>(x, y)</strong>.</p>
+                <p>Eles se cruzam na <strong>origem (0,0)</strong>que é o ponto central representado por (0,0).</p>
+                <p>Qualquer ponto no plano é localizado por um par ordenado <strong>(x, y)</strong>.</p>
                 
-                <h3>📌 Quadrantes</h3>
+                <h3>📌 Os 4 Quadrantes</h3>
+                <ul>
+                    <li> O plano é dividido em <strong>4 quadrantes</strong>:</li>
+                    <li> Estes quadrantes definem a localização de pontos com base em seus sinais.
+                    Valores negativos para a esquerda e para baixo, positivos para a direita e para cima, numerados em 
+                    sentido antihorário a partir do quadrante superior direito.
+                    </li>
                 <ul>
                     <li><strong>I</strong> (+,+) • <strong>II</strong> (–,+)</li>
                     <li><strong>III</strong> (–,–) • <strong>IV</strong> (+,–)</li>
                 </ul>
+                <h3>🎯 Vamos Praticar!</h3>
+                <li> Com essas informações é possível identificar qualquer ponto no plano.
+                    experimente encontrar pontos no gráfico ao lado comece pelos pontos 
+                    (-5 , 3) e (4, -2) e veja em qual quadrante eles estão.
+                    
+                </li>
             </div>
 
             <!-- COLUNA DIREITA: INTERAÇÃO -->
@@ -749,7 +761,15 @@
         <div class="grid-2">
             <div class="card">
                 <h2><i class="fas fa-cube" style="color: var(--primary-light);"></i> Plano 3D</h2>
-                <p>Na robótica, o <strong>eixo Z</strong> representa <span class="highlight">altura ou profundidade</span>.</p>
+                   <p> Se o plano 2D e como um mapa(Somente com altura e largura), o plano 3 D e mais proximo do mundo real!
+                    adicionando uma terceira dimensão: a profundidade ou altura
+                   </p>
+                <h3> Exemplo classico:</h3>
+                <p>Na robótica, o <strong>eixo Z</strong> representa <span class="highlight">altura ou profundidade</span>
+                    imagine que você está controlando um drone:</p>
+                    <li>O eixo Y fará seu drone se mover para frente e para trás</li>
+                    <li>O eixo X fará seu drone se mover para a esquerda e para a direita</li>
+                    <li>O eixo Z fará seu drone se mover para cima e para baixo</li>
                 <ul>
                     <li><span class="highlight">X</span> <span class="dot dot-red" style="vertical-align:middle;"></span> vermelho (lateral)</li>
                     <li><span class="highlight">Y</span> <span class="dot dot-green" style="vertical-align:middle;"></span> verde (frontal/traseiro)</li>
@@ -759,15 +779,16 @@
                 <div style="background: #0B5394; border-radius: var(--radius-xs); padding: 14px; margin-top: 12px;">
                     <strong><i class="fas fa-drone"></i> Exemplo robótico:</strong><br>
                     Drone voando para <strong>(5m, 3m, 2m)</strong><br>
-                    <span style="color: var(--text-muted);">→ 5m direita, 3m frente, 2m altura</span>
+                    <span style="color: var(--text-muted);">→ 5m direita, 3m frente, 2m altura</span>                  
                 </div>
+                <p> Experimente observar a representação do espaço 3D interagindo com a imagem ao lado:</p>
                 <div class="legenda" style="margin-top: 12px;">
                     <span><span class="dot dot-red"></span> Eixo X</span>
                     <span><span class="dot dot-green"></span> Eixo Y</span>
                     <span><span class="dot dot-blue"></span> Eixo Z</span>
                 </div>
             </div>
-            <div class="card" style="background: #ffffff;">
+            <div class="card" style="background: #000000;">
                 <h2><i class="fas fa-hand-pointer" style="color: var(--secondary-color);"></i> Interaja com o 3D</h2>
                 <p style="margin-bottom: 6px;">Clique e arraste para rotacionar. Scroll para zoom.</p>
                 
@@ -804,13 +825,14 @@
             <h2><i class="fas fa-tasks" style="color: var(--secondary-color);"></i> Atividades e Desafios</h2>
             <p>Pratique seus conhecimentos sobre o Plano Cartesiano com estas atividades interativas.</p>
 
-            <!-- DESAFIO 1: Encontre o Ponto -->
+            <!-- DESAFIO 1: Vá ate o Ponto -->
             <div class="atividade-item">
                 <div class="pergunta">
                     <i class="fas fa-question-circle" style="color: var(--primary-light);"></i>
-                    Desafio 1: Encontre o ponto <strong id="desafioAlvo">(2, 3)</strong>
+                    Desafio 1: Partindo da origem vá ate o ponto <strong id="desafioAlvo">(2, 3)</strong>
                 </div>
-                <p style="font-size: 0.9rem; color: var(--text-muted);">Clique no gráfico 2D para marcar o ponto. Use a aba "2D Clássico".</p>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Partindo da origem, quantos passo você dará ate chegar nos pontos (2,3)
+                    (Dica cada passo equivale a 1 ponto)</p>
                 <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px;">
                     <button class="btn btn-success btn-revelar" onclick="revelarResposta('resp1')">
                         <i class="fas fa-eye"></i> Ver Resposta
@@ -820,7 +842,7 @@
                     </button>
                 </div>
                 <div id="resp1" class="resposta">
-                    O ponto (2, 3) está no <strong>1º quadrante</strong>, 2 unidades à direita e 3 unidades para cima da origem.
+                    O ponto (2, 3) está no <strong>1º quadrante</strong>, 2 passos à direita e 3 passos para cima da origem.
                 </div>
             </div>
 
@@ -879,8 +901,10 @@
                 <div id="resp4" class="resposta">
                     <strong>(-3, 4)</strong> → 2º quadrante (x negativo, y positivo)<br>
                     <strong>(2, -5)</strong> → 4º quadrante (x positivo, y negativo)
-                </div>
+                </div>            
             </div>
+            <p>Surgiu alguma duvida? Aqui está a formula: d = √[(x₂-x₁)² + (y₂-y₁)² + (z₂-z₁)²]. 
+                    Tente resolver para conseguir pontos extras</p>
         </div>
     </section>
 
@@ -889,7 +913,7 @@
     <!-- ============================================================ -->
     <section id="tabTeoria" class="tab-content" role="tabpanel" aria-label="Teoria e Robótica">
         <div class="card">
-            <h2><i class="fas fa-graduation-cap" style="color: var(--primary-light);"></i> Teoria Completa e Aplicações em Robótica</h2>
+            <h2><i class="fas fa-graduation-cap" style="color: var(--primary-light);"></i> Resumo da Teoria Completa e Aplicações em Robótica</h2>
             
             <h3>🔹 O que é o Plano Cartesiano?</h3>
             <p>Sistema de coordenadas criado por René Descartes, formado por dois eixos perpendiculares (X e Y) que se cruzam na origem (0,0).</p>
@@ -941,27 +965,38 @@
                     Distância = √(3² + 4² + 3²) = √(9 + 16 + 9) = √34 ≈ <strong>5,83 unidades</strong>
                 </p>
             </details>
+           
         </div>
     </section>
 
     <!-- ===== RODAPÉ ===== -->
     <footer class="footer">
-        <p>
-            <i class="fas fa-star" style="color: #f1c40f;"></i>
-            Plano Cartesiano — Aprendizado visual e interativo
-        </p>
-        <div class="footer-links">
-            <a onclick="resetDefault2D();" aria-label="Reiniciar exemplo 2D">
-                <i class="fas fa-undo"></i> Reiniciar 2D
-            </a>
-            <a onclick="resetCamera3D();" aria-label="Resetar visualização 3D">
-                <i class="fas fa-cube"></i> Resetar 3D
-            </a>
-            <a onclick="scrollToTop();" aria-label="Voltar ao topo da página">
-                <i class="fas fa-arrow-up"></i> Topo
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-bottom: 15px;">
+        <!-- ===== INFORMAÇÕES DO AUTOR ===== -->
+        <div>
+            <i class="fas fa-user-graduate" style="color: var(--primary-light);"></i>
+            <strong>Autor:</strong> Pedro Moura
+        </div>
+        <div>
+            <i class="fas fa-envelope" style="color: var(--primary-light);"></i>
+            <a href="mailto:seuemail@email.com" style="color: var(--primary-light);">
+                Pedro.moura@fiemg.com.br
             </a>
         </div>
-    </footer>
+        
+        <!-- ================================= -->
+    </div>
+    
+    <p>
+        <i class="fas fa-star" style="color: #f1c40f;"></i>
+        Plano Cartesiano — Aprendizado visual e interativo
+    </p>
+    <div class="footer-links">
+        <a onclick="resetDefault2D();">↺ Reiniciar 2D</a>
+        <a onclick="resetCamera3D();">↺ Resetar 3D</a>
+        <a onclick="scrollToTop();"><i class="fas fa-arrow-up"></i> Topo</a>
+    </div>
+</footer>
 </div>
 
 <!-- ============================================================ -->
