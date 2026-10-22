@@ -179,40 +179,6 @@ cd plano-cartesiano
 
 ---
 
-## 🔧 Personalização
-
-### Alterar Cores
-As cores são controladas por variáveis CSS no `:root`:
-
-```css
-:root {
-    --primary-color: #1f4a7a;    /* Azul principal */
-    --primary-light: #79a5e2;    /* Azul claro */
-    --secondary-color: #27ae60;  /* Verde */
-    --danger-color: #e74c3c;     /* Vermelho */
-}
-```
-
-### Adicionar Novos Desafios
-Edite a seção de atividades no HTML:
-
-```html
-<div class="atividade-item">
-    <div class="pergunta">
-        <i class="fas fa-question-circle"></i>
-        Desafio 5: Seu novo desafio aqui
-    </div>
-    <button onclick="revelarResposta('resp5')">
-        Ver Resposta
-    </button>
-    <div id="resp5" class="resposta">
-        Resposta do desafio
-    </div>
-</div>
-```
-
----
-
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
