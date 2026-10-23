@@ -59,7 +59,7 @@ Este é um **aplicativo educacional interativo** desenvolvido para ensinar o Pla
 |------------|-----------|
 | **HTML5** | Estrutura semântica da página |
 | **CSS3** | Estilização, responsividade e temas escuro/claro |
-| **JavaScript (Vanilla)** | Lógica do plano 2D e interatividade |
+| **JavaScript ** | Lógica do plano 2D e interatividade |
 | **Three.js** | Renderização 3D e interação com a câmera |
 | **Font Awesome** | Ícones para melhor experiência visual |
 
