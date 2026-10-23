@@ -97,12 +97,9 @@ cd plano-cartesiano
 # Ou use um servidor local como Live Server do VS Code
 ```
 
-### Opção 3: Publicar no GitHub Pages
+### Opção 3: Usar pelo link no GitHub Pages
 
-1. Faça um fork deste repositório
-2. Ative o GitHub Pages nas configurações
-3. Acesse `https://seu-usuario.github.io/plano-cartesiano`
-
+1. Acesse: https://pedrohms11.github.io/Ensino-interativo/
 ---
 
 ## 🎯 Como Navegar
@@ -157,6 +154,7 @@ cd plano-cartesiano
 | **Exploração 3D** | 5 min | Visualizar eixos e coordenadas 3D |
 | **Atividades** | 20 min | Resolver os 4 desafios |
 | **Discussão em grupo** | 10 min | Compartilhar estratégias |
+|**Jogo Interativo de fixação**| 10 min| Acesse Link do jogo no final do conteúdo|
 
 ### Habilidades Desenvolvidas
 - ✅ Localização de pontos no plano cartesiano
