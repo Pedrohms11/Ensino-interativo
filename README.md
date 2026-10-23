@@ -12,7 +12,7 @@
 
 ## 📖 Sobre o Projeto
 
-Este é um **aplicativo educacional interativo** desenvolvido para ensinar o Plano Cartesiano de forma visual e prática. O projeto combina teoria, interatividade e aplicações no mundo real, especialmente na área de **robótica**.
+Este é um **aplicativo educacional interativo** desenvolvido durante o programa de estágio na unidade Senai de programação e robótica de Nova Lima para ensinar o Plano Cartesiano de forma visual e prática. O projeto combina teoria, interatividade e aplicações no mundo real, especialmente na área de **robótica**.
 
 ### 🎯 Público-alvo
 - Estudantes do Ensino Médio e Técnico
